@@ -7,7 +7,7 @@ Request format:
   "base_themes_sha256": "<sha256 of themes.json the request was built against>",
   "files": [{"path": "themes/<slug>/loop.<hash>.mp4", "sha256": "...", "size": 123,
              "drive_id": "<public Drive file id>", "url": "<optional direct URL>"}],
-  "themes_json": "<the complete new themes.json text>"
+  "themes_json": "<the complete new themes.json text>"   (or omit it and add ingest/next/<id>.themes.json)
 }
 Rules: a published file is never overwritten (same path must have identical bytes); themes.json is only
 replaced when every file downloaded and verified and every media ref in it exists; media this job
@@ -91,12 +91,15 @@ def _fetch_all(req, written):
         download(f, dest); written.append(p)
 
 
-def apply(req, published):
+def apply(req, published, rid):
     cur = os.path.join(ROOT, 'themes.json')
     base = sha256_file(cur) if os.path.exists(cur) else None
     if req.get('base_themes_sha256') and req['base_themes_sha256'] != base:
         raise RuntimeError('stale request: themes.json changed since it was built; the sync will rebuild it')
-    new_text = req['themes_json']
+    side = os.path.join(ROOT, 'ingest', 'next', rid + '.themes.json')
+    if 'themes_json' in req: new_text = req['themes_json']
+    else:
+        with open(side, encoding='utf-8', newline='') as f: new_text = f.read()
     cat = json.loads(new_text)
     if not cat.get('themes'): raise RuntimeError('refusing an empty catalog')
     written = []
@@ -115,7 +118,7 @@ def apply(req, published):
     live = set(refs(cat)); removed = []
     for p in sorted(published):
         if p not in live and os.path.exists(os.path.join(ROOT, p)):
-            subprocess.run(['git', 'rm', '-q', '--', p], check=True); removed.append(p)
+            subprocess.run(['git', 'rm', '-q', '-f', '--', p], check=True); removed.append(p)
     published.difference_update(removed)
     return written, removed
 
@@ -130,7 +133,7 @@ def main():
         rid = os.path.splitext(os.path.basename(rp))[0]
         try:
             req = json.load(open(rp, encoding='utf-8'))
-            written, removed = apply(req, published)
+            written, removed = apply(req, published, rid)
             results.append({'id': req.get('id', rid), 'status': 'applied', 'written': written, 'removed': removed,
                             'themes_sha256': sha256_file(os.path.join(ROOT, 'themes.json'))})
             msgs.append(f'{rid}: +{len(written)} -{len(removed)}')
@@ -139,7 +142,9 @@ def main():
             rejected = True
             results.append({'id': rid, 'status': 'rejected', 'error': str(e)})
             msgs.append(f'{rid}: rejected'); print(f'REJECTED {rid}: {e}')
-        subprocess.run(['git', 'rm', '-q', '--', os.path.relpath(rp, ROOT)], check=True)
+        subprocess.run(['git', 'rm', '-q', '-f', '--', os.path.relpath(rp, ROOT)], check=True)
+        side = os.path.join(ROOT, 'ingest', 'next', rid + '.themes.json')
+        if os.path.exists(side): subprocess.run(['git', 'rm', '-q', '-f', '--', os.path.relpath(side, ROOT)], check=True)
     os.makedirs(os.path.dirname(PUBLISHED), exist_ok=True)
     json.dump(sorted(published), open(PUBLISHED, 'w'), indent=1)
     json.dump({'at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()), 'run': os.environ.get('GITHUB_RUN_ID'),
