@@ -1,11 +1,10 @@
 {
   "schema":1,
-  "updated":"2026-10-04T14:06:13Z",
+  "updated":"2026-10-04T14:15:46Z",
   "baseUrl":"https://davidebri1.github.io/collider-media/",
   "defaultSlug":"starbridge",
   "generatedBy":"collider-sync",
   "themes":[
-    {"slug":"sync-test-meadow","name":"Sync Test Meadow","collection":"Collider Live","creator":"Collider Studio","tier":"Elite 4K Live Pack","premium":true,"price":"$4.99","productId":"collider.theme.sync-test-meadow","poster":"themes/sync-test-meadow/poster.1261cb6be513.webp?v=9f64dca21e","video":"themes/sync-test-meadow/loop.dc885ba18302.mp4?v=02c1be8dfc","tracks":[{"number":1,"title":"Sync Test Meadow","duration":"0:12","mood":"Ambient","audio":"themes/sync-test-meadow/song.b45214b29726.m4a?v=5ee3009aa4"}]},
     {"slug":"tide-concrete","name":"Tide Concrete","collection":"Coastal Brutalism","creator":"Harbor Form Studio","tier":"Elite 4K Live Pack","premium":true,"price":"$4.99","productId":"collider.theme.tide-concrete","poster":"themes/tide-concrete/poster.webp","video":"themes/tide-concrete/loop.mp4","tracks":[]},
     {"slug":"paper-lantern-alley","name":"Paper Lantern Alley","collection":"Night Streets","creator":"Night Market Atelier","tier":"Elite 4K Live Pack","premium":true,"price":"$5.99","productId":"collider.theme.paper-lantern-alley","poster":"themes/paper-lantern-alley/poster.webp","video":"themes/paper-lantern-alley/loop.mp4","tracks":[]},
     {"slug":"obsidian-rain","name":"Obsidian Rain","collection":"Night Glass","creator":"Hydrophonic Labs","tier":"Elite 4K Live Pack","premium":true,"price":"$5.99","productId":"collider.theme.obsidian-rain","poster":"themes/obsidian-rain/poster.webp","video":"themes/obsidian-rain/loop.mp4","tracks":[]},
