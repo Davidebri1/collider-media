@@ -1,10 +1,36 @@
 {
   "schema": 1,
-  "updated": "2026-10-09T09:07:33Z",
+  "updated": "2026-10-09T00:00:00Z",
   "baseUrl": "https://davidebri1.github.io/collider-media/",
   "defaultSlug": "starbridge",
   "generatedBy": "collider-sync",
   "themes": [
+    {
+      "slug": "1920-1080-25fps",
+      "name": "Meadow Light",
+      "collection": "Downloads Curation",
+      "creator": "Local Library",
+      "tier": "Free Live Loop",
+      "premium": false,
+      "price": null,
+      "productId": null,
+      "poster": "themes/1920-1080-25fps/poster.webp",
+      "video": "themes/1920-1080-25fps/loop.mp4",
+      "tracks": []
+    },
+    {
+      "slug": "368501609-medium",
+      "name": "Rain Window",
+      "collection": "Downloads Curation",
+      "creator": "Local Library",
+      "tier": "Free Live Loop",
+      "premium": false,
+      "price": null,
+      "productId": null,
+      "poster": "themes/368501609-medium/poster.webp",
+      "video": "themes/368501609-medium/loop.mp4",
+      "tracks": []
+    },
     {
       "slug": "537102350",
       "name": "537102350",
@@ -16,6 +42,32 @@
       "productId": null,
       "poster": "themes/537102350/poster.webp",
       "video": "themes/537102350/loop.mp4",
+      "tracks": []
+    },
+    {
+      "slug": "692674391-medium",
+      "name": "Cyan Shelf",
+      "collection": "Downloads Curation",
+      "creator": "Local Library",
+      "tier": "Free Live Loop",
+      "premium": false,
+      "price": null,
+      "productId": null,
+      "poster": "themes/692674391-medium/poster.webp",
+      "video": "themes/692674391-medium/loop.mp4",
+      "tracks": []
+    },
+    {
+      "slug": "770315514-medium",
+      "name": "Dusk Tide",
+      "collection": "Downloads Curation",
+      "creator": "Local Library",
+      "tier": "Free Live Loop",
+      "premium": false,
+      "price": null,
+      "productId": null,
+      "poster": "themes/770315514-medium/poster.webp",
+      "video": "themes/770315514-medium/loop.mp4",
       "tracks": []
     },
     {
@@ -292,19 +344,6 @@
       "tracks": []
     },
     {
-      "slug": "692674391-medium",
-      "name": "Cyan Shelf",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/692674391-medium/poster.webp",
-      "video": "themes/692674391-medium/loop.mp4",
-      "tracks": []
-    },
-    {
       "slug": "cyberpunk-cityscape",
       "name": "Cyberpunk Cityscape",
       "collection": "Downloads Curation",
@@ -331,20 +370,6 @@
       "tracks": []
     },
     {
-      "slug": "ocean_free",
-      "name": "Deep Ocean Still",
-      "collection": "Spatial Ambient Series",
-      "creator": "Abyssal Sound",
-      "tier": "Free Spatial Canvas",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/ocean_free/poster.webp",
-      "video": null,
-      "still": "themes/ocean_free/still.webp",
-      "tracks": []
-    },
-    {
       "slug": "dunehall",
       "name": "Dune Hall",
       "collection": "Spatial Ambient Series",
@@ -356,19 +381,6 @@
       "poster": "themes/dunehall/poster.webp",
       "video": null,
       "still": "themes/dunehall/still.webp",
-      "tracks": []
-    },
-    {
-      "slug": "770315514-medium",
-      "name": "Dusk Tide",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/770315514-medium/poster.webp",
-      "video": "themes/770315514-medium/loop.mp4",
       "tracks": []
     },
     {
@@ -408,33 +420,6 @@
       "productId": null,
       "poster": "themes/ember-smoke/poster.webp",
       "video": "themes/ember-smoke/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "garden",
-      "name": "Ethereal Garden",
-      "collection": "Spatial Ambient Series",
-      "creator": "Flora Sonics",
-      "tier": "Free Spatial Canvas",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/garden/poster.webp",
-      "video": null,
-      "still": "themes/garden/still.webp",
-      "tracks": []
-    },
-    {
-      "slug": "flat-stretch-gatineau-river",
-      "name": "Flat Stretch Gatineau River",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/flat-stretch-gatineau-river/poster.webp",
-      "video": "themes/flat-stretch-gatineau-river/loop.mp4",
       "tracks": []
     },
     {
@@ -487,6 +472,20 @@
       "productId": null,
       "poster": "themes/futuristic-sunset/poster.webp",
       "video": "themes/futuristic-sunset/loop.mp4",
+      "tracks": []
+    },
+    {
+      "slug": "garden",
+      "name": "Ethereal Garden",
+      "collection": "Spatial Ambient Series",
+      "creator": "Flora Sonics",
+      "tier": "Free Spatial Canvas",
+      "premium": false,
+      "price": null,
+      "productId": null,
+      "poster": "themes/garden/poster.webp",
+      "video": null,
+      "still": "themes/garden/still.webp",
       "tracks": []
     },
     {
@@ -568,17 +567,16 @@
       "tracks": []
     },
     {
-      "slug": "transit",
-      "name": "Hyper Transit",
-      "collection": "Spatial Ambient Series",
-      "creator": "MagLev Acoustics",
-      "tier": "Free Spatial Canvas",
+      "slug": "i2v-40d5b63fc4a04cc38aec18df9bf25fb3",
+      "name": "Sunset Windowsill Live",
+      "collection": "Downloads Curation",
+      "creator": "Local Library",
+      "tier": "Free Live Loop",
       "premium": false,
       "price": null,
       "productId": null,
-      "poster": "themes/transit/poster.webp",
-      "video": null,
-      "still": "themes/transit/still.webp",
+      "poster": "themes/i2v-40d5b63fc4a04cc38aec18df9bf25fb3/poster.webp",
+      "video": "themes/i2v-40d5b63fc4a04cc38aec18df9bf25fb3/loop.mp4",
       "tracks": []
     },
     {
@@ -608,19 +606,6 @@
       "tracks": []
     },
     {
-      "slug": "landscape-lake",
-      "name": "Landscape Lake",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/landscape-lake/poster.webp",
-      "video": "themes/landscape-lake/loop.mp4",
-      "tracks": []
-    },
-    {
       "slug": "landscape-lake-2",
       "name": "Landscape Lake",
       "collection": "Downloads Curation",
@@ -644,19 +629,6 @@
       "productId": null,
       "poster": "themes/landscape-nature/poster.webp",
       "video": "themes/landscape-nature/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "landscape-nature-2",
-      "name": "Landscape Nature",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/landscape-nature-2/poster.webp",
-      "video": "themes/landscape-nature-2/loop.mp4",
       "tracks": []
     },
     {
@@ -686,16 +658,16 @@
       "tracks": []
     },
     {
-      "slug": "1920-1080-25fps",
-      "name": "Meadow Light",
+      "slug": "live-wallpaper-turn-this-into",
+      "name": "Sunset Windowsill",
       "collection": "Downloads Curation",
       "creator": "Local Library",
       "tier": "Free Live Loop",
       "premium": false,
       "price": null,
       "productId": null,
-      "poster": "themes/1920-1080-25fps/poster.webp",
-      "video": "themes/1920-1080-25fps/loop.mp4",
+      "poster": "themes/live-wallpaper-turn-this-into/poster.webp",
+      "video": "themes/live-wallpaper-turn-this-into/loop.mp4",
       "tracks": []
     },
     {
@@ -712,6 +684,19 @@
       "tracks": []
     },
     {
+      "slug": "medium-10",
+      "name": "Medium",
+      "collection": "Downloads Curation",
+      "creator": "Local Library",
+      "tier": "Free Live Loop",
+      "premium": false,
+      "price": null,
+      "productId": null,
+      "poster": "themes/medium-10/poster.webp",
+      "video": "themes/medium-10/loop.mp4",
+      "tracks": []
+    },
+    {
       "slug": "medium-2",
       "name": "Medium",
       "collection": "Downloads Curation",
@@ -722,19 +707,6 @@
       "productId": null,
       "poster": "themes/medium-2/poster.webp",
       "video": "themes/medium-2/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "medium-3",
-      "name": "Medium",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/medium-3/poster.webp",
-      "video": "themes/medium-3/loop.mp4",
       "tracks": []
     },
     {
@@ -761,19 +733,6 @@
       "productId": null,
       "poster": "themes/medium-5/poster.webp",
       "video": "themes/medium-5/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "medium-6",
-      "name": "Medium",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/medium-6/poster.webp",
-      "video": "themes/medium-6/loop.mp4",
       "tracks": []
     },
     {
@@ -816,19 +775,6 @@
       "tracks": []
     },
     {
-      "slug": "medium-10",
-      "name": "Medium",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/medium-10/poster.webp",
-      "video": "themes/medium-10/loop.mp4",
-      "tracks": []
-    },
-    {
       "slug": "moonfield",
       "name": "Moonfield",
       "collection": "Drive Library",
@@ -839,19 +785,6 @@
       "productId": null,
       "poster": "themes/moonfield/poster.webp",
       "video": "themes/moonfield/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "moonrise",
-      "name": "Moonrise",
-      "collection": "Drive Library",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/moonrise/poster.webp",
-      "video": "themes/moonrise/loop.mp4",
       "tracks": []
     },
     {
@@ -908,20 +841,6 @@
       "tracks": []
     },
     {
-      "slug": "rainfall",
-      "name": "Night Rainfall",
-      "collection": "Spatial Ambient Series",
-      "creator": "Hydrophonic Labs",
-      "tier": "Free Spatial Canvas",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/rainfall/poster.webp",
-      "video": null,
-      "still": "themes/rainfall/still.webp",
-      "tracks": []
-    },
-    {
       "slug": "night-shore",
       "name": "Night Shore",
       "collection": "Drive Library",
@@ -932,19 +851,6 @@
       "productId": null,
       "poster": "themes/night-shore/poster.webp",
       "video": "themes/night-shore/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "night-shore-ii",
-      "name": "Night Shore II",
-      "collection": "Drive Library",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/night-shore-ii/poster.webp",
-      "video": "themes/night-shore-ii/loop.mp4",
       "tracks": []
     },
     {
@@ -1014,6 +920,20 @@
       "tracks": []
     },
     {
+      "slug": "ocean_free",
+      "name": "Deep Ocean Still",
+      "collection": "Spatial Ambient Series",
+      "creator": "Abyssal Sound",
+      "tier": "Free Spatial Canvas",
+      "premium": false,
+      "price": null,
+      "productId": null,
+      "poster": "themes/ocean_free/poster.webp",
+      "video": null,
+      "still": "themes/ocean_free/still.webp",
+      "tracks": []
+    },
+    {
       "slug": "palm-dusk",
       "name": "Palm Dusk",
       "collection": "Drive Library",
@@ -1053,29 +973,17 @@
       "tracks": []
     },
     {
-      "slug": "368501609-medium",
-      "name": "Rain Window",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
+      "slug": "rainfall",
+      "name": "Night Rainfall",
+      "collection": "Spatial Ambient Series",
+      "creator": "Hydrophonic Labs",
+      "tier": "Free Spatial Canvas",
       "premium": false,
       "price": null,
       "productId": null,
-      "poster": "themes/368501609-medium/poster.webp",
-      "video": "themes/368501609-medium/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "reflection-lake",
-      "name": "Reflection Lake",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/reflection-lake/poster.webp",
-      "video": "themes/reflection-lake/loop.mp4",
+      "poster": "themes/rainfall/poster.webp",
+      "video": null,
+      "still": "themes/rainfall/still.webp",
       "tracks": []
     },
     {
@@ -1194,19 +1102,6 @@
       "productId": null,
       "poster": "themes/sky-moon-2/poster.webp",
       "video": "themes/sky-moon-2/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "sky-moon-3",
-      "name": "Sky Moon",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/sky-moon-3/poster.webp",
-      "video": "themes/sky-moon-3/loop.mp4",
       "tracks": []
     },
     {
@@ -1380,32 +1275,6 @@
       "tracks": []
     },
     {
-      "slug": "live-wallpaper-turn-this-into",
-      "name": "Sunset Windowsill",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/live-wallpaper-turn-this-into/poster.webp",
-      "video": "themes/live-wallpaper-turn-this-into/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "i2v-40d5b63fc4a04cc38aec18df9bf25fb3",
-      "name": "Sunset Windowsill Live",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/i2v-40d5b63fc4a04cc38aec18df9bf25fb3/poster.webp",
-      "video": "themes/i2v-40d5b63fc4a04cc38aec18df9bf25fb3/loop.mp4",
-      "tracks": []
-    },
-    {
       "slug": "tide-concrete",
       "name": "Tide Concrete",
       "collection": "Coastal Brutalism",
@@ -1442,6 +1311,20 @@
       "productId": null,
       "poster": "themes/time-lapse/poster.webp",
       "video": "themes/time-lapse/loop.mp4",
+      "tracks": []
+    },
+    {
+      "slug": "transit",
+      "name": "Hyper Transit",
+      "collection": "Spatial Ambient Series",
+      "creator": "MagLev Acoustics",
+      "tier": "Free Spatial Canvas",
+      "premium": false,
+      "price": null,
+      "productId": null,
+      "poster": "themes/transit/poster.webp",
+      "video": null,
+      "still": "themes/transit/still.webp",
       "tracks": []
     },
     {
