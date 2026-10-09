@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-09T10:27:20Z",
+  "updated": "2026-10-09T00:00:00Z",
   "baseUrl": "https://davidebri1.github.io/collider-media/",
   "defaultSlug": "starbridge",
   "generatedBy": "collider-sync",
@@ -816,19 +816,6 @@
       "tracks": []
     },
     {
-      "slug": "moonfield",
-      "name": "Moonfield",
-      "collection": "Drive Library",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/moonfield/poster.webp",
-      "video": "themes/moonfield/loop.mp4",
-      "tracks": []
-    },
-    {
       "slug": "moonlit-skyline",
       "name": "Moonlit Skyline",
       "collection": "Drive Library",
@@ -1237,32 +1224,6 @@
       "tracks": []
     },
     {
-      "slug": "storm-flats",
-      "name": "Storm Flats",
-      "collection": "Drive Library",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/storm-flats/poster.webp",
-      "video": "themes/storm-flats/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "storm-stormy",
-      "name": "Storm Stormy",
-      "collection": "Downloads Curation",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/storm-stormy/poster.webp",
-      "video": "themes/storm-stormy/loop.mp4",
-      "tracks": []
-    },
-    {
       "slug": "subway-platform",
       "name": "Subway Platform",
       "collection": "Platform Hours",
@@ -1442,19 +1403,6 @@
       "productId": null,
       "poster": "themes/vertical-video-glowing/poster.webp",
       "video": "themes/vertical-video-glowing/loop.mp4",
-      "tracks": []
-    },
-    {
-      "slug": "violet-field",
-      "name": "Violet Field",
-      "collection": "Drive Library",
-      "creator": "Local Library",
-      "tier": "Free Live Loop",
-      "premium": false,
-      "price": null,
-      "productId": null,
-      "poster": "themes/violet-field/poster.webp",
-      "video": "themes/violet-field/loop.mp4",
       "tracks": []
     },
     {
