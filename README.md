@@ -3,14 +3,14 @@
 Public media host for the Collider app (GitHub Pages).
 
 - `themes.json` : theme catalog the app loads at runtime (bundled fallback copy ships in the app).
-- `themes/<slug>/poster.webp` : poster, about 720px wide.
-- `themes/<slug>/loop.mp4` : live wallpaper loop, H.264 720p, faststart, muted (premium packs).
-- `themes/<slug>/still.webp` : 1080px still for full-bleed use (free themes).
+- `themes/<slug>/poster.webp` : poster at the source's full resolution (long side capped at 4K only).
+- `themes/<slug>/loop.mp4` : live wallpaper, H.264 CRF 18 preset slow, +faststart, native resolution (up to 4K) and native frame rate (never resampled). Over 95 MB it is published as HLS instead: `themes/<slug>/hls/index.m3u8`.
+- `themes/<slug>/still.webp` : full-resolution still (image themes).
+- `themes/<slug>/song.m4a` : the video's embedded audio, when it has any (that theme's song).
+- Every theme entry carries `width`, `height` and `fps` (ffprobe at ingest) plus its `driveId`.
 - `tracks/*.mp3` : ambient tracks for the music drawer.
 
-## Add a theme (no app rebuild)
-1. Transcode: poster `ffmpeg -i src.jpg -vf scale=720:-2 -c:v libwebp -q:v 75 poster.webp`;
-   loop `ffmpeg -i src.mp4 -an -vf scale=720:-2,format=yuv420p -c:v libx264 -preset slow -crf 26 -movflags +faststart loop.mp4` (keep under 2.5 MB).
-2. Put both under `themes/<slug>/`.
-3. Add an entry to `themes.json` (slug, name, collection, price, productId, poster, video, tracks). Paths are relative to `baseUrl`.
-4. Commit and push. Pages serves it within a few minutes; the app picks it up on next launch.
+## Add, replace or remove a theme (no app rebuild, no bot)
+Drag files into the Drive folder "Collider Themes" (one file = one theme, file name = theme name; shared songs go in `Songs/`).
+The "Collider Drive sync" Action (`.github/workflows/drive-sync.yml`) runs every 20 minutes on GitHub's schedule, and on demand from the Actions tab.
+It mirrors the folder exactly: new files are added, changed files re-ingested, deleted files removed. Large batches continue on the next run.
