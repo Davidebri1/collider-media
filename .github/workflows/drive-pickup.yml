@@ -1,0 +1,78 @@
+# Drive pickup: drop a file into the link-shared "Collider Themes" Drive folder
+# and it appears in the app on the next run. No PR, no request file, no code
+# change on your side.
+#
+# What is different from the bot this replaces:
+#
+#   - It only ADDS. An entry already in themes.json is never rewritten, never
+#     renamed, never reordered, never deleted. defaultSlug is never touched.
+#   - It stages only the paths it created. The old job ran `git add -A`, which
+#     swept every hand edit into an automated commit.
+#   - Hourly, not every 20 minutes. A dropped file appears within the hour
+#     instead of within 20 minutes, and an empty run costs about ten seconds.
+#
+# Keyless: the Drive folder is link-shared. This reads Drive's public embedded
+# folder view. No secrets, no service account, nothing to configure.
+name: Drive pickup
+
+on:
+  schedule:
+    # Hourly at :07. Off the hour so it does not pile onto GitHub's busiest tick.
+    - cron: '7 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+# Never let two pickups race each other into conflicting pushes.
+concurrency:
+  group: collider-pickup
+  cancel-in-progress: false
+
+jobs:
+  pickup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: ffmpeg
+        run: which ffmpeg ffprobe || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
+
+      - name: Pick up new files from Drive
+        id: apply
+        env:
+          BUDGET_MIN: '45'
+        run: python3 .github/ingest/drive_pickup.py
+
+      # Only what this run created. Never `git add -A`: that is how a hand-curated
+      # themes.json gets swept into an automated commit and reverted.
+      - name: Stage only what the pickup created
+        if: steps.apply.outputs.changed == 'true'
+        run: |
+          git add -- themes.json ingest/pickup-state.json
+          # themes/ holds the newly written media directories; stage only those
+          # that are not yet tracked, so already-published media is never re-added.
+          git add -- themes/
+          git status --porcelain | grep -q '^??' && {
+            echo "Untracked files the pickup did not stage; leaving them alone:"
+            git status --porcelain | grep '^??'
+          }
+          git diff --cached --quiet && echo "nothing to commit" && exit 1 || true
+
+      - name: Commit and push
+        if: steps.apply.outputs.changed == 'true'
+        env:
+          MSG: ${{ steps.apply.outputs.message }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git diff --cached --quiet && exit 0
+          git commit -q -m "$MSG"
+          for i in 1 2 3; do git push origin HEAD:main && break; git pull --rebase -q origin main; done
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
