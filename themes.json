@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-12T17:03:40Z",
+ "updated": "2026-10-12T17:31:55Z",
  "baseUrl": "https://davidebri1.github.io/collider-media/",
  "defaultSlug": "0-beach-waves-3840x2160-gqapqv",
  "generatedBy": "collider-drive-sync",
@@ -19,7 +19,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Rainy Corner Store",
+     "title": "0319bbf2-a06b-4664-b094-0dfcd5ea0b51_1080_hd",
      "duration": "0:06",
      "mood": "",
      "audio": "themes/0319bbf2-a06b-4664-b094-0dfcd5ea0b51-1080-hd-v9dubk/song.m4a"
@@ -333,7 +333,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Golden Ember Drift",
+     "title": "0_Gold_Glitter_Sparkles_1280x720",
      "duration": "0:14",
      "mood": "",
      "audio": "themes/0-gold-glitter-sparkles-1280x720-8s780x/song.m4a"
@@ -377,7 +377,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Manhattan at Dusk",
+     "title": "0_New_York_City_Manhattan_1280x720",
      "duration": "0:10",
      "mood": "",
      "audio": "themes/0-new-york-city-manhattan-1280x720-sd-zr0/song.m4a"
@@ -855,7 +855,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Waves at Sunset",
+     "title": "138588-770315514_medium",
      "duration": "0:29",
      "mood": "",
      "audio": "themes/138588-770315514-medium-dyrekv/song.m4a"
@@ -1015,7 +1015,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Storm Over the Yellow Field",
+     "title": "25520a42-ed66-4e2e-ae2b-8f80eb53942f_1080_hd",
      "duration": "0:06",
      "mood": "",
      "audio": "themes/25520a42-ed66-4e2e-ae2b-8f80eb53942f-1080-hd-kgxcf5/song.m4a"
@@ -1293,7 +1293,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Phantom Smoke",
+     "title": "4954776_Coll_halloween_Realistic_1280x720 - Copy",
      "duration": "0:15",
      "mood": "",
      "audio": "themes/4954776-coll-halloween-realistic-1280x720-copy-kekm1a/song.m4a"
@@ -1427,7 +1427,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Rippling Sunset Water",
+     "title": "656466_Barbara_Beach_1920x1080",
      "duration": "0:20",
      "mood": "",
      "audio": "themes/656466-barbara-beach-1920x1080-iqfder/song.m4a"
@@ -1490,7 +1490,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Sparkle Cluster",
+     "title": "7020349_Template_Artwork_1280x720",
      "duration": "0:07",
      "mood": "",
      "audio": "themes/7020349-template-artwork-1280x720-8rvrt3/song.m4a"
@@ -1516,7 +1516,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Steam and Shadow",
+     "title": "7020362_Steamer_Flow_1280x720",
      "duration": "0:25",
      "mood": "",
      "audio": "themes/7020362-steamer-flow-1280x720-ewtmaz/song.m4a"
@@ -1596,7 +1596,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Gnarled Tree and Orb",
+     "title": "71f8cc8b-7051-42b0-b6b0-a88f257118ea_1080_hd",
      "duration": "0:06",
      "mood": "",
      "audio": "themes/71f8cc8b-7051-42b0-b6b0-a88f257118ea-1080-hd-pjftq4/song.m4a"
@@ -1622,7 +1622,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "Vortex of Blue Particles",
+     "title": "a3612b1a-ba58-4437-9515-779c1ee1fe9e_1080_hd",
      "duration": "0:10",
      "mood": "",
      "audio": "themes/a3612b1a-ba58-4437-9515-779c1ee1fe9e-1080-hd-czw5me/song.m4a"
@@ -2868,27 +2868,27 @@
   {
    "title": "Spatial Drift",
    "audio": "tracks/ambient-01.mp3",
-   "art": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh/poster.webp"
+   "art": "themes/0319bbf2-a06b-4664-b094-0dfcd5ea0b51-1080-hd-v9dubk/poster.webp"
   },
   {
    "title": "Slow Orbit",
    "audio": "tracks/ambient-02.mp3",
-   "art": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh/poster.webp"
+   "art": "themes/0319bbf2-a06b-4664-b094-0dfcd5ea0b51-1080-hd-v9dubk/poster.webp"
   },
   {
    "title": "Night Signal",
    "audio": "tracks/ambient-03.mp3",
-   "art": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh/poster.webp"
+   "art": "themes/0319bbf2-a06b-4664-b094-0dfcd5ea0b51-1080-hd-v9dubk/poster.webp"
   },
   {
    "title": "Soft Field",
    "audio": "tracks/ambient-04.mp3",
-   "art": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh/poster.webp"
+   "art": "themes/0319bbf2-a06b-4664-b094-0dfcd5ea0b51-1080-hd-v9dubk/poster.webp"
   },
   {
    "title": "Long Exposure",
    "audio": "tracks/ambient-05.mp3",
-   "art": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh/poster.webp"
+   "art": "themes/0319bbf2-a06b-4664-b094-0dfcd5ea0b51-1080-hd-v9dubk/poster.webp"
   }
  ]
 }
