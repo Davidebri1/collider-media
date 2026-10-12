@@ -1,9 +1,9 @@
 {
  "schema": 1,
- "updated": "2026-10-12T17:47:44Z",
+ "updated": "2026-10-12T20:26:48Z",
  "baseUrl": "https://davidebri1.github.io/collider-media/",
  "defaultSlug": "0-beach-waves-3840x2160-gqapqv",
- "generatedBy": "collider-drive-sync",
+ "generatedBy": "collider-drive-pickup (additive; curated entries never rewritten)",
  "themes": [
   {
    "slug": "0319bbf2-a06b-4664-b094-0dfcd5ea0b51-1080-hd-v9dubk",
@@ -2862,6 +2862,32 @@
    "fps": null,
    "driveId": "1uTHDLhW2BQjFWjoSVgZIAM382paceemS",
    "source": "wolf3.png"
+  },
+  {
+   "slug": "0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-mp4-nksdeh",
+   "name": "D E A Ad D Bceac E",
+   "collection": "Collider Themes",
+   "creator": "David Ebri",
+   "tier": "Free Live Loop",
+   "premium": false,
+   "price": null,
+   "productId": null,
+   "poster": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-mp4-nksdeh/poster.webp",
+   "video": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-mp4-nksdeh/loop.mp4",
+   "tracks": [
+    {
+     "number": 1,
+     "title": "0251d1e0-16a1-49ad-9807-19d1bceac3e9_1080_hd",
+     "duration": "0:06",
+     "mood": "",
+     "audio": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-mp4-nksdeh/song.m4a"
+    }
+   ],
+   "width": 1168,
+   "height": 1728,
+   "fps": 24.0,
+   "driveId": "1uJVrtrjCOGTWw9ZSfgKO5ptdE2NKSDeh",
+   "source": "0251d1e0-16a1-49ad-9807-19d1bceac3e9_1080_hd.mp4"
   }
  ],
  "ambientTracks": [
