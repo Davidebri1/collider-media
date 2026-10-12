@@ -95,8 +95,15 @@ def process(f, work, outdir):
 def main():
     cat = json.load(open('themes.json'))
     st = json.load(open('ingest/state.json')) if os.path.exists('ingest/state.json') else {'files': {}, 'songs': {}}
+    # Curated names, maintained by build_names.py. The Drive filename is a
+    # machine slug, so without this every hand-written name reverts on each run.
+    nm = json.load(open('ingest/names.json')) if os.path.exists('ingest/names.json') else {}
+    curated = nm.get('names', {}) if isinstance(nm, dict) else {}
+    skip = set(nm.get('exclude', []) if isinstance(nm, dict) else [])
     items = listing(FOLDER)
     files = [i for i in items if not i['folder'] and (ext(i['name']) in VID | IMG)]
+    # Retired themes stay retired even though the file is still on Drive.
+    files = [i for i in files if slugify(stem(i['name']), i['id']) not in skip]
     songs_dir = next((i for i in items if i['folder'] and i['name'].lower() == 'songs'), None)
     songs = [s for s in listing(songs_dir['id']) if not s['folder'] and ext(s['name']) in AUD] if songs_dir else []
     seen = {f['id'] for f in files}; done = pending = failed = 0
@@ -140,7 +147,7 @@ def main():
         r, p = e['res'], e['res']['probe']; live = 'video' in r
         w, h = p['w'], p['h']
         if w and max(w, h) > 3840: k = 3840 / max(w, h); w, h = round(w * k / 2) * 2, round(h * k / 2) * 2
-        themes.append({'slug': e['slug'], 'name': stem(e['name']), 'collection': 'Collider Themes', 'creator': 'David Ebri',
+        themes.append({'slug': e['slug'], 'name': curated.get(e['slug']) or stem(e['name']), 'collection': 'Collider Themes', 'creator': 'David Ebri',
             'tier': 'Free Live Loop' if live else 'Free Spatial Canvas', 'premium': False, 'price': None, 'productId': None,
             'poster': r['poster'], 'video': r.get('video'), **({'still': r['still']} if 'still' in r else {}),
             'tracks': [r['song']] if r.get('song') else shared,
@@ -153,6 +160,7 @@ def main():
     else: cat['ambientTracks'] = [a for a in cat.get('ambientTracks', []) if os.path.exists(a['audio'])]
     for a in cat['ambientTracks']:
         if a.get('art') and not os.path.exists(a['art']) and themes: a['art'] = themes[0]['poster']
+    if isinstance(nm, dict) and nm.get('defaultSlug') in keep: cat['defaultSlug'] = nm['defaultSlug']
     if cat.get('defaultSlug') not in keep and themes: cat['defaultSlug'] = themes[0]['slug']
     cat['generatedBy'] = 'collider-drive-sync'
     new = json.dumps(cat, indent=1, ensure_ascii=False)
