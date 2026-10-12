@@ -2,35 +2,9 @@
  "schema": 1,
  "updated": "2026-10-12T17:03:40Z",
  "baseUrl": "https://davidebri1.github.io/collider-media/",
- "defaultSlug": "0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh",
+ "defaultSlug": "0-beach-waves-3840x2160-gqapqv",
  "generatedBy": "collider-drive-sync",
  "themes": [
-  {
-   "slug": "0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh",
-   "name": "Reader by the Window",
-   "collection": "Collider Themes",
-   "creator": "David Ebri",
-   "tier": "Free Live Loop",
-   "premium": false,
-   "price": null,
-   "productId": null,
-   "poster": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh/poster.webp",
-   "video": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh/loop.mp4",
-   "tracks": [
-    {
-     "number": 1,
-     "title": "0251d1e0-16a1-49ad-9807-19d1bceac3e9_1080_hd",
-     "duration": "0:06",
-     "mood": "",
-     "audio": "themes/0251d1e0-16a1-49ad-9807-19d1bceac3e9-1080-hd-nksdeh/song.m4a"
-    }
-   ],
-   "width": 1168,
-   "height": 1728,
-   "fps": 24.0,
-   "driveId": "1uJVrtrjCOGTWw9ZSfgKO5ptdE2NKSDeh",
-   "source": "0251d1e0-16a1-49ad-9807-19d1bceac3e9_1080_hd.mp4"
-  },
   {
    "slug": "0319bbf2-a06b-4664-b094-0dfcd5ea0b51-1080-hd-v9dubk",
    "name": "Rainy Corner Store",
@@ -45,7 +19,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "0319bbf2-a06b-4664-b094-0dfcd5ea0b51_1080_hd",
+     "title": "Rainy Corner Store",
      "duration": "0:06",
      "mood": "",
      "audio": "themes/0319bbf2-a06b-4664-b094-0dfcd5ea0b51-1080-hd-v9dubk/song.m4a"
@@ -359,7 +333,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "0_Gold_Glitter_Sparkles_1280x720",
+     "title": "Golden Ember Drift",
      "duration": "0:14",
      "mood": "",
      "audio": "themes/0-gold-glitter-sparkles-1280x720-8s780x/song.m4a"
@@ -403,7 +377,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "0_New_York_City_Manhattan_1280x720",
+     "title": "Manhattan at Dusk",
      "duration": "0:10",
      "mood": "",
      "audio": "themes/0-new-york-city-manhattan-1280x720-sd-zr0/song.m4a"
@@ -881,7 +855,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "138588-770315514_medium",
+     "title": "Waves at Sunset",
      "duration": "0:29",
      "mood": "",
      "audio": "themes/138588-770315514-medium-dyrekv/song.m4a"
@@ -1041,7 +1015,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "25520a42-ed66-4e2e-ae2b-8f80eb53942f_1080_hd",
+     "title": "Storm Over the Yellow Field",
      "duration": "0:06",
      "mood": "",
      "audio": "themes/25520a42-ed66-4e2e-ae2b-8f80eb53942f-1080-hd-kgxcf5/song.m4a"
@@ -1319,7 +1293,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "4954776_Coll_halloween_Realistic_1280x720 - Copy",
+     "title": "Phantom Smoke",
      "duration": "0:15",
      "mood": "",
      "audio": "themes/4954776-coll-halloween-realistic-1280x720-copy-kekm1a/song.m4a"
@@ -1453,7 +1427,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "656466_Barbara_Beach_1920x1080",
+     "title": "Rippling Sunset Water",
      "duration": "0:20",
      "mood": "",
      "audio": "themes/656466-barbara-beach-1920x1080-iqfder/song.m4a"
@@ -1516,7 +1490,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "7020349_Template_Artwork_1280x720",
+     "title": "Sparkle Cluster",
      "duration": "0:07",
      "mood": "",
      "audio": "themes/7020349-template-artwork-1280x720-8rvrt3/song.m4a"
@@ -1542,7 +1516,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "7020362_Steamer_Flow_1280x720",
+     "title": "Steam and Shadow",
      "duration": "0:25",
      "mood": "",
      "audio": "themes/7020362-steamer-flow-1280x720-ewtmaz/song.m4a"
@@ -1622,7 +1596,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "71f8cc8b-7051-42b0-b6b0-a88f257118ea_1080_hd",
+     "title": "Gnarled Tree and Orb",
      "duration": "0:06",
      "mood": "",
      "audio": "themes/71f8cc8b-7051-42b0-b6b0-a88f257118ea-1080-hd-pjftq4/song.m4a"
@@ -1648,7 +1622,7 @@
    "tracks": [
     {
      "number": 1,
-     "title": "a3612b1a-ba58-4437-9515-779c1ee1fe9e_1080_hd",
+     "title": "Vortex of Blue Particles",
      "duration": "0:10",
      "mood": "",
      "audio": "themes/a3612b1a-ba58-4437-9515-779c1ee1fe9e-1080-hd-czw5me/song.m4a"
